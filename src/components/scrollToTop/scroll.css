@@ -1,0 +1,40 @@
+.scroll__container{
+    background: var(--color-bg-varient);
+    display: inline;
+    position: fixed;
+    right: 5%;
+    z-index: 2;
+    width: max-content;
+    bottom: 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid #1085d8;
+    
+}
+
+.scroll__container a{
+    background: transparent;
+    padding: 0.1rem;
+    display: flex;
+    color: var(--color-white);
+    font-size: 2.5rem;
+}
+
+.scroll__container:hover{
+    background: transparent;
+}
+
+/* ========================================= MEDIA QUERIES (MEDIUM DEVICES) =================================================*/
+
+@media screen and (max-width: 1024px) {
+    .scroll__container{
+        right: 2%;
+    }
+}
+
+/* ========================================= MEDIA QUERIES (SMALL DEVICES) =================================================*/
+
+@media screen and (max-width: 600px) {
+    .scroll__container{
+        display: none;
+    }
+}
