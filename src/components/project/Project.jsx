@@ -33,8 +33,8 @@ const data = [
     id: 4,
     image: IMG5,
     title: 'Portfolio Website',
-    github: 'https://github.com/Prateek-rajput-007/Portfolio-Website',
-    demo: 'https://github.com/Prateek-rajput-007/Machine-Learning-Projects'
+    github: 'https://github.com/Prateek-rajput-007/Portfolio',
+    demo: 'https://my-portfolio-website-007.vercel.app/'
   },
   {
     id: 5,
