@@ -3,6 +3,7 @@ import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai';
 import {BiBookBookmark} from 'react-icons/bi';
 import {MdOutlineMiscellaneousServices} from 'react-icons/md';
 import {TbMessageCircle} from 'react-icons/tb';
+import { MdAutoStories } from "react-icons/md";
 import './nav.css';
 
 const Nav = () => {
@@ -12,7 +13,7 @@ const Nav = () => {
       <a href="#" onClick={()=>{setActiveNav('#')}} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
       <a href="#about" onClick={()=>{setActiveNav('#about')}} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser/></a>
       <a href="#experience" onClick={()=>{setActiveNav('#experience')}} className={activeNav === '#experience' ? 'active' : ''}><BiBookBookmark/></a>
-      <a href="#education" onClick={()=>{setActiveNav('#education')}} className={activeNav === '#education' ? 'active' : ''}><MdOutlineMiscellaneousServices/></a>
+      <a href="#education" onClick={()=>{setActiveNav('#education')}} className={activeNav === '#education' ? 'active' : ''}><MdAutoStories /></a>
       <a href="#contact" onClick={()=>{setActiveNav('#contact')}} className={activeNav === '#contact' ? 'active' : ''}><TbMessageCircle/></a>
      
     </nav>
