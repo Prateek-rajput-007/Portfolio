@@ -208,12 +208,12 @@ const Experience = () => {
         {/* Backend Starts */}
 
         <div className="experience__backend">
-          <h3>Python Libraries</h3>
+          <h3>Tools & Platforms</h3>
           <div className="experience__content">
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details__icon" />
               <div>
-                <h4>NumPy</h4>
+                <h4>VS Code</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
@@ -221,23 +221,7 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details__icon" />
               <div>
-                <h4>Pandas</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details__icon" />
-              <div>
-                <h4>Scikit-learn</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details__icon" />
-              <div>
-                <h4>Matplotlib</h4>
+                <h4>Jira</h4>
                 <small className="text-light">Beginner</small>
               </div>
             </article>
@@ -245,7 +229,23 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details__icon" />
               <div>
-                <h4>Seaborn</h4>
+                <h4>Github</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details__icon" />
+              <div>
+                <h4>Netlify</h4>
+                <small className="text-light">Beginner</small>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details__icon" />
+              <div>
+                <h4>Vercel</h4>
                 <small className="text-light">Beginner</small>
               </div>
             </article>
