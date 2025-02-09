@@ -1,0 +1,109 @@
+/* ==================== EXPERIENCE CONTAINER ==================== */
+.experience__container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure it takes the full viewport height */
+    padding: 2rem;
+  }
+  
+  .experience__container > div {
+    background: var(--color-bg-variant);
+    padding: 2.4rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    transition: var(--transition);
+    max-width: 800px; /* Limit the width for better readability */
+    width: 100%; /* Ensure it takes full width on smaller screens */
+  }
+  
+  .experience__container > div:hover {
+    background: transparent;
+    border: 1px solid var(--color-primary-variant);
+    cursor: default;
+  }
+  
+  .experience__container h3 {
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* ==================== EXPERIENCE CONTENT ==================== */
+  .experience__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .experience__details {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start; /* Align icon and text properly */
+  }
+  
+  .experience__details__icon {
+    margin-top: 6px;
+    color: var(--color-primary);
+    flex-shrink: 0; /* Prevent icon from shrinking */
+  }
+  
+  .experience__details__icon path {
+    height: 16px;
+    width: 16px;
+  }
+  
+  /* ==================== TECH STACK SECTION ==================== */
+  .experience__tech-stack {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--color-bg-variant);
+    border-radius: 10px;
+    border: 1px solid var(--color-primary-variant);
+  }
+  
+  .experience__tech-stack h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .experience__tech-stack p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-light);
+  }
+  
+  /* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+  @media screen and (max-width: 1024px) {
+    .experience__container > div {
+      width: 90%; /* Slightly smaller width for medium devices */
+      padding: 2rem;
+    }
+  
+    .experience__content {
+      grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+    }
+  }
+  
+  /* ==================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+  @media screen and (max-width: 600px) {
+    .experience__container {
+      padding: 1rem; /* Reduce padding for small devices */
+    }
+  
+    .experience__container > div {
+      width: 100%; /* Full width on small devices */
+      padding: 1.5rem;
+    }
+  
+    .experience__details {
+      flex-direction: column; /* Stack icon and text vertically */
+      align-items: center;
+      text-align: center;
+    }
+  
+    .experience__details__icon {
+      margin-top: 0; /* Reset margin for vertical alignment */
+    }
+  }

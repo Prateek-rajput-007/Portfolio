@@ -1,78 +1,220 @@
-.experience__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+/* ==================== EXPERIENCE CONTAINER ==================== */
+.experience__container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2rem;
+   width: 100%;
+   max-width: 1400px;
+   margin: 0 auto;
  }
-
- .experience__container > div{
-    background: var(--color-bg-varient);
-    padding: 2.4rem;
-    border: 1px solid transparent;
-    border-radius: 2rem;
-    transition: var(--transition);
+ 
+ .experience__container > div {
+   background: var(--color-bg-variant);
+   padding: 2.4rem;
+   border: 1px solid transparent;
+   border-radius: 2rem;
+   transition: var(--transition);
  }
-
- .experience__container > div:hover{
-    background: transparent;
-    border: 1px solid var(--color-primary-varient);
-    cursor: default;
+ 
+ .experience__container > div:hover {
+   background: transparent;
+   border: 1px solid var(--color-primary-variant);
+   cursor: default;
  }
-
- .experience__container > div h3{
-    color: var(--color-primary);
-    text-align: center;
-    margin-bottom: 2rem;
+ 
+ .experience__container h3 {
+   color: var(--color-primary);
+   text-align: center;
+   margin-bottom: 2rem;
  }
-
- .experience__content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+ 
+ /* ==================== EXPERIENCE CONTENT ==================== */
+ .experience__content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap: 2rem;
  }
-
- .experience__details{
-    display: flex;
-    gap: 1rem;
+ 
+ .experience__details {
+   display: flex;
+   gap: 1rem;
  }
-
- .experience__details__icon{
-    margin-top: 6px;
-    color: var(--color-primary);
+ 
+ .experience__details__icon {
+   margin-top: 6px;
+   color: var(--color-primary);
  }
-
- .experience__details__icon path{
+ 
+ .experience__details__icon path {
    height: 16px;
    width: 16px;
  }
-
-
+ 
+ /* ==================== TECHNICAL SKILLS SECTION ==================== */
+ .experience__technical {
+   margin-top: 2rem;
+ }
+ 
+ .experience__technical h3 {
+   color: var(--color-primary);
+   text-align: center;
+   margin-bottom: 2rem;
+ }
+ 
+ .experience__technical .experience__content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap: 2rem;
+ }
+ 
+ .experience__technical .experience__details {
+   display: flex;
+   gap: 1rem;
+ }
+ 
+ .experience__technical .experience__details__icon {
+   margin-top: 6px;
+   color: var(--color-primary);
+ }
+ 
+ /* ==================== ALTERNATIVE EXPERIENCE SECTION ==================== */
+ .experience__alternative {
+   margin-top: 2rem;
+ }
+ 
+ .experience__alternative h3 {
+   color: var(--color-primary);
+   text-align: center;
+   margin-bottom: 2rem;
+ }
+ 
+ .experience__alternative .experience__content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap: 2rem;
+ }
+ 
+ .experience__alternative .experience__details {
+   display: flex;
+   gap: 1rem;
+ }
+ 
+ .experience__alternative .experience__details__icon {
+   margin-top: 6px;
+   color: var(--color-primary);
+ }
+ 
+ /* ==================== TECH STACK SECTION ==================== */
+ .experience__tech-stack {
+   text-align: center;
+   margin-top: 2rem;
+   padding: 1rem;
+   background: var(--color-bg-variant);
+   border-radius: 10px;
+ }
+ 
+ .experience__tech-stack h3 {
+   color: var(--color-primary);
+   margin-bottom: 0.5rem;
+ }
+ 
+ .experience__tech-stack p {
+   font-size: 1.1rem;
+   font-weight: 500;
+   color: var(--color-light);
+ }
+ 
+ /* ==================== FLIP CARD LAYOUT ==================== */
+ .experience__flip-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 3rem 1rem;
+ }
+ 
+ .experience__flip-card {
+   background: var(--color-bg-variant);
+   width: 300px;
+   height: 200px;
+   perspective: 1000px;
+ }
+ 
+ .experience__flip-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+ }
+ 
+ .experience__flip-card:hover .experience__flip-card-inner {
+   transform: rotateY(180deg);
+ }
+ 
+ .experience__flip-card-front,
+ .experience__flip-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 1rem;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .experience__flip-card-front {
+   background: var(--color-bg-variant);
+   color: var(--color-primary);
+ }
+ 
+ .experience__flip-card-back {
+   background: var(--color-primary);
+   color: var(--color-bg);
+   transform: rotateY(180deg);
+ }
+ 
+ .experience__details__icon {
+   margin-bottom: 1rem;
+   color: var(--color-primary);
+ }
+ 
+ /* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
  @media screen and (max-width: 1024px) {
-
-   .experience__container{
-      grid-template-columns: 1fr;
+   .experience__container {
+     grid-template-columns: 1fr;
    }
-
-   .experience__container > div{
-      width: 80%;
-      padding: 2rem;
-      margin: 0 auto;
+ 
+   .experience__container > div {
+     width: 80%;
+     padding: 2rem;
+     margin: 0 auto;
    }
-
-   .experience__content{
-      padding: 1rem;
+ 
+   .experience__content {
+     padding: 1rem;
    }
-}
-
-
-/* ========================================= MEDIA QUERIES (SMALL DEVICES) =================================================*/
-
-@media screen and (max-width: 600px) {
-   .experience__container{
-      gap: 1rem;
+ 
+   .experience__flip-card {
+     width: 80%;
    }
-
-   .experience__container > div{
-      width: 100%;
-      padding: 2rem 1rem;
+ }
+ 
+ /* ==================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+ @media screen and (max-width: 600px) {
+   .experience__container {
+     gap: 1rem;
    }
-}
+ 
+   .experience__container > div {
+     width: 100%;
+     padding: 2rem 1rem;
+   }
+ 
+   .experience__flip-card {
+     width: 100%;
+   }
+ }
