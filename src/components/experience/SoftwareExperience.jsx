@@ -1,67 +1,170 @@
 import React from "react";
 import { BsPatchCheckFill } from "react-icons/bs";
+import { motion } from "framer-motion";
 import "./experience.css";
 
 const SoftwareExperience = () => {
   return (
     <section id="software-experience">
-      <h5>My Professional Journey</h5>
-      <h2>Software Engineering Experience</h2>
+      <motion.h5
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 0.5 }}
+      >
+        My Professional Journey
+      </motion.h5>
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
+        Software Engineering Experience
+      </motion.h2>
 
       <div className="container services__container">
-        <article className="service">
-          <div className="service__head">
+        <motion.article
+          className="service"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.div
+            className="service__head"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+          >
             <h3>Software Engineer at Alternative Path</h3>
-          </div>
+          </motion.div>
 
-          <ul className="service__list">
-            <li>
+          <motion.ul
+            className="service__list"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <motion.li
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.5, delay: 0.25 }}
+            >
               <BsPatchCheckFill className="service__list__icon" />
               <p>React Development: Developed a React-based platform to connect users and streamline workflows, improving user engagement by 30%.</p>
-            </li>
-            <li>
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
               <BsPatchCheckFill className="service__list__icon" />
               <p>Authentication & Authorization: Implemented JWT-based authentication to secure user sessions, supporting 500+ active users daily.</p>
-            </li>
-            <li>
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.5, delay: 0.35 }}
+            >
               <BsPatchCheckFill className="service__list__icon" />
               <p>Security: Enhanced security with Bcrypt for password hashing, ensuring zero reported breaches.</p>
-            </li>
-            <li>
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
               <BsPatchCheckFill className="service__list__icon" />
               <p>Frontend Optimization: Optimized load times by 20% using React hooks and state management.</p>
-            </li>
-          </ul>
-        </article>
+            </motion.li>
+          </motion.ul>
+        </motion.article>
 
-        <article className="service">
-          <div className="service__head">
+        <motion.article
+          className="service"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          <motion.div
+            className="service__head"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+          >
             <h3>Tech Stack Used</h3>
-          </div>
+          </motion.div>
 
-          <ul className="service__list">
-            <li>
+          <motion.ul
+            className="service__list"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <motion.li
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.5, delay: 0.25 }}
+            >
               <BsPatchCheckFill className="service__list__icon" />
               <p>React.js</p>
-            </li>
-            <li>
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
               <BsPatchCheckFill className="service__list__icon" />
               <p>Node.js</p>
-            </li>
-            <li>
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.5, delay: 0.35 }}
+            >
               <BsPatchCheckFill className="service__list__icon" />
               <p>Express.js</p>
-            </li>
-            <li>
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
               <BsPatchCheckFill className="service__list__icon" />
               <p>Docker</p>
-            </li>
-            <li>
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.5, delay: 0.45 }}
+            >
               <BsPatchCheckFill className="service__list__icon" />
               <p>AWS</p>
-            </li>
-          </ul>
-        </article>
+            </motion.li>
+          </motion.ul>
+        </motion.article>
       </div>
     </section>
   );
