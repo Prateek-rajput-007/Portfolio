@@ -1,7 +1,7 @@
 import React from 'react';
 import CTA from './CTA';
 import './header.css';
-import ME from '../../assets/me.png';
+import ME from '../../assets/highlighted_border.png';
 import HeaderSocials from './HeaderSocials';
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { motion } from "framer-motion";
