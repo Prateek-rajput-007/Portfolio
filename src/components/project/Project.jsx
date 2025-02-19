@@ -6,23 +6,23 @@ import IMG3 from '../../assets/weather.png';
 import IMG4 from '../../assets/machine.png';
 import IMG5 from '../../assets/portfolio_project.png';
 import IMG6 from '../../assets/football.png';
-import Job from '../../assets/Job.png';
+import Job from '../../assets/Job (3).png';
 import { motion } from "framer-motion";
 
 const data = [
   {
     id: 1,
-    image: IMG1,
-    title: 'Task Scheduler',
-    github: 'https://github.com/Prateek-rajput-007/Task-Scheduler',
-    demo: 'https://to-do-scheduler.netlify.app/'
+    image: Job,
+    title: 'Job Seeking Application',
+    github: 'https://github.com/Prateek-rajput-007/full-stack-job-seeking-app/',
+    demo: 'https://js-seeker.onrender.com/'
   },
   {
     id: 2,
-    image: Job,
-    title: 'Job Seeking Application',
-    github: 'https://github.com/Prateek-rajput-007/Job-Seeking-',
-    demo: 'https://www.youtube.com/watch?v=C_9-729awzg'
+    image: IMG3,
+    title: 'Weather App',
+    github: 'https://github.com/Prateek-rajput-007/Machine-Learning-Projects',
+    demo: 'https://weatherifyapp.netlify.app/'
   },
   {
     id: 3,
@@ -33,27 +33,20 @@ const data = [
   },
   {
     id: 4,
-    image: IMG5,
-    title: 'Portfolio Website',
-    github: 'https://github.com/Prateek-rajput-007/Portfolio',
-    demo: 'https://github.com/Prateek-rajput-007/Machine-Learning-Projects'
+    image: IMG1,
+    title: 'Task Scheduler',
+    github: 'https://github.com/Prateek-rajput-007/Task-Scheduler',
+    demo: 'https://to-do-scheduler.netlify.app/'
   },
   {
     id: 5,
-    image: IMG3,
-    title: 'Weather App',
-    github: 'https://github.com/Prateek-rajput-007/Machine-Learning-Projects',
-    demo: 'https://weatherifyapp.netlify.app/'
-  },
-  {
-    id: 6,
     image: IMG4,
     title: 'Machine Learning',
     github: 'https://github.com/Prateek-rajput-007/Machine-Learning-Projects',
     demo: 'https://github.com/Prateek-rajput-007/Machine-Learning-Projects'
   },
   {
-    id: 7,
+    id: 6,
     image: IMG2,
     title: 'Todo Management App',
     github: 'https://github.com/Prateek-rajput-007/Todo-Management-App',
