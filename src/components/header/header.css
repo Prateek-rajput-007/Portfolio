@@ -1,3 +1,4 @@
+
 header{
     height: 100vh;
     padding-top: 3rem;
@@ -51,10 +52,10 @@ header{
     overflow: hidden;
 }
 
-.me img{
-    height: 100%;
+.me img {
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* ==================== SCROLL DOWN ========================= */
